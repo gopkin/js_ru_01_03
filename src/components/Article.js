@@ -23,6 +23,7 @@ class Article extends Component {
     
     handleDelete = (event) => {
         event.preventDefault()
+        //для этого используют декоратор connect из react-redux
         store.dispatch(deleteArticleById(this.props.article.id))
     }
 }
